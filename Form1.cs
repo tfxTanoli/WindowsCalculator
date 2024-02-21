@@ -145,6 +145,10 @@ namespace WindowsCalculator
             {
                 label1.Text = (Math.Pow(firstNumber, secondNumber)).ToString();
             }
+            else
+            {
+                MessageBox.Show("Please Select Valid Operator.");
+            }
         }
 
         private void button19_Click(object sender, EventArgs e)

@@ -185,7 +185,18 @@ namespace WindowsCalculator
 
         private void button12_Click(object sender, EventArgs e)
         {
-            
+            if (!label1.Text.Contains(".")) { 
+                label1.Text += ".";
+        }
+           
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            if (label1.Text.Length > 0)
+            {
+                label1.Text = label1.Text.Substring(0, label1.Text.Length - 1);
+            }
         }
     }
 }
